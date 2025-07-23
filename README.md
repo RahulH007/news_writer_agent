@@ -1,6 +1,6 @@
 # News Writer Agent
 
-![crewAI Logo](https://crewai.com/logo.png)
+![crewAI Logo](assets/crewai_logo.svg)
 
 The **News Writer Agent** is an AI-powered system designed to automate the process of researching, summarizing, and generating professional news articles. Built on the [crewAI](https://crewai.com) framework, it streamlines workflows and delivers polished markdown articles effortlessly.
 
