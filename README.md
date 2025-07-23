@@ -1,54 +1,68 @@
-# AiNews Crew
+# News Writer Agent
 
-Welcome to the AiNews Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+![crewAI Logo](https://crewai.com/logo.png)
+
+The **News Writer Agent** is an AI-powered system designed to automate the process of researching, summarizing, and generating professional news articles. Built on the [crewAI](https://crewai.com) framework, it streamlines workflows and delivers polished markdown articles effortlessly.
+
+---
+
+## Features
+
+- **Automated Research**: Gather the latest and most relevant information.
+- **Web Scraping**: Extract insights from multiple websites.
+- **Content Summarization**: Generate concise summaries.
+- **Markdown Output**: Produce professional articles ready for publication.
+
+---
 
 ## Installation
 
-Ensure you have Python >=3.10 <3.14 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
+1. Ensure **Python >=3.10 <3.14** is installed.
+2. Install [UV](https://docs.astral.sh/uv/):
+   ```bash
+   pip install uv
+   ```
+3. Install dependencies:
+   ```bash
+   crewai install
+   ```
 
-First, if you haven't already, install uv:
+---
 
-```bash
-pip install uv
-```
+## Usage
 
-Next, navigate to your project directory and install the dependencies:
-
-(Optional) Lock the dependencies and install them by using the CLI command:
-```bash
-crewai install
-```
-### Customizing
-
-**Add your `OPENAI_API_KEY` into the `.env` file**
-
-- Modify `src/ai_news/config/agents.yaml` to define your agents
-- Modify `src/ai_news/config/tasks.yaml` to define your tasks
-- Modify `src/ai_news/crew.py` to add your own logic, tools and specific args
-- Modify `src/ai_news/main.py` to add custom inputs for your agents and tasks
-
-## Running the Project
-
-To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
+Run the following command to start the agent:
 
 ```bash
-$ crewai run
+crewai run
 ```
 
-This command initializes the ai-news Crew, assembling the agents and assigning them tasks as defined in your configuration.
+This generates a `news_article.md` file with the output.
 
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
+---
 
-## Understanding Your Crew
+## Customization
 
-The ai-news Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
+- Configure agents in `src/ai_news/config/agents.yaml`.
+- Define tasks in `src/ai_news/config/tasks.yaml`.
+- Add custom logic in `src/ai_news/crew.py`.
+- Set your `OPENAI_API_KEY` in the `.env` file.
 
-## Support
+---
 
-For support, questions, or feedback regarding the AiNews Crew or crewAI.
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
+## About
 
-Let's create wonders together with the power and simplicity of crewAI.
+Powered by [crewAI](https://crewai.com), this project simplifies multi-agent AI workflows. While crewAI provides the foundation, the design and logic are entirely my own.
+
+---
+
+## Feedback
+
+Feel free to contribute or share feedback:
+
+- **GitHub Issues**: Report bugs or request features.
+- **Email**: [Your Email Address Here]
+
+---
+
+Let’s redefine news creation with AI!
