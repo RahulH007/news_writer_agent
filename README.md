@@ -50,18 +50,11 @@ This generates a `news_article.md` file with the output.
 
 ---
 
-## About
-
-Powered by [crewAI](https://crewai.com), this project simplifies multi-agent AI workflows. While crewAI provides the foundation, the design and logic are entirely my own.
-
----
-
 ## Feedback
 
 Feel free to contribute or share feedback:
 
 - **GitHub Issues**: Report bugs or request features.
-- **Email**: [Your Email Address Here]
 
 ---
 
